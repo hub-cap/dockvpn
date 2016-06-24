@@ -50,8 +50,12 @@ dh dh.pem
 keepalive 10 60
 persist-key
 persist-tun
-push "dhcp-option DNS 8.8.8.8"
-push "dhcp-option DNS 8.8.4.4"
+#push "dhcp-option DNS 8.8.8.8"
+#push "dhcp-option DNS 8.8.4.4"
+
+#route 172.16.0.0 255.255.255.0
+push "route 172.16.0.0 255.255.0.0"
+push "route 172.17.0.0 255.255.0.0"
 
 proto udp
 port 1194
