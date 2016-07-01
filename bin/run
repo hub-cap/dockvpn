@@ -56,6 +56,7 @@ persist-tun
 #route 172.16.0.0 255.255.255.0
 push "route 172.16.0.0 255.255.0.0"
 push "route 172.17.0.0 255.255.0.0"
+push "route 192.168.40.0 255.255.255.0"
 
 proto udp
 port 1194
